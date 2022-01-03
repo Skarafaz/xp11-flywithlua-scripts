@@ -1,41 +1,44 @@
-# Compiled Lua sources
-luac.out
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
+# Local History for Visual Studio Code
+.history/
 
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
-# Precompiled Headers
-*.gch
-*.pch
+# Support for Project snippet scope
+!.vscode/*.code-snippets
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Dump file
+*.stackdump
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Folder config file
+[Dd]esktop.ini
 
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
