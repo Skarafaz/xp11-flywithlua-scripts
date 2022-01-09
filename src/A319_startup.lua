@@ -1,5 +1,5 @@
 -- ToLiss A319 startup script by Skarafaz
--- version 1.0.0
+-- version 1.0.1
 
 if PLANE_ICAO ~= "A319" then
     return
@@ -18,13 +18,13 @@ to_init = true
 function init()
     if os.clock() > start_time then
         if (to_init == true) then
-            XPLMSpeakString("Staurtup completed")
+            XPLMSpeakString("Startup completed")
 
             gpu[0] = 0
 
-            door_cargo[0] = 2
-            door_cargo[1] = 2
-            door_pax[0] = 2
+            door_cargo[0] = 0
+            door_cargo[1] = 0
+            door_pax[0] = 0
             door_pax[1] = 0
             door_pax[2] = 0
             door_pax[3] = 0
