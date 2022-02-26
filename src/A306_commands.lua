@@ -5,16 +5,16 @@ if PLANE_ICAO ~= "A306" then
     return
 end
 
-function hide_yoke()
-    DataRef( "cp" , "A300/hide_yoke_captain" , "writable" )
-    DataRef( "fo" , "A300/hide_yoke_copilot" , "writable" )
+DataRef( "cap_yoke_h" , "A300/hide_yoke_captain" , "writable" )
+DataRef( "cop_yoke_h" , "A300/hide_yoke_copilot" , "writable" )
 
-    if (cp == 0) then
-        cp = 1
-        fo = 1
+function hide_yoke()
+    if (cap_yoke_h == 0) then
+        cap_yoke_h = 1
+        cop_yoke_h = 1
     else
-        cp = 0
-        fo = 0
+        cap_yoke_h = 0
+        cop_yoke_h = 0
     end
 end
 
