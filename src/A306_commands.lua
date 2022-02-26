@@ -5,10 +5,10 @@ if PLANE_ICAO ~= "A306" then
     return
 end
 
-DataRef( "cap_yoke_h" , "A300/hide_yoke_captain" , "writable" )
-DataRef( "cop_yoke_h" , "A300/hide_yoke_copilot" , "writable" )
-
 function hide_yoke()
+    DataRef( "cap_yoke_h" , "A300/hide_yoke_captain" , "writable" )
+    DataRef( "cop_yoke_h" , "A300/hide_yoke_copilot" , "writable" )
+
     if (cap_yoke_h == 0) then
         cap_yoke_h = 1
         cop_yoke_h = 1
