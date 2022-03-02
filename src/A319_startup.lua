@@ -1,11 +1,12 @@
 -- ToLiss A319 startup script by Skarafaz
--- version 1.0.2
+-- version 1.0.3
 
 if PLANE_ICAO ~= "A319" then
     return
 end
 
 local gpu = dataref_table("AirbusFBW/EnableExternalPower")
+local chocks = dataref_table("AirbusFBW/Chocks")
 
 local door_pax = dataref_table("AirbusFBW/PaxDoorModeArray")
 local door_cargo = dataref_table("AirbusFBW/CargoDoorModeArray")
@@ -34,6 +35,7 @@ function init()
             XPLMSpeakString("Startup completed")
 
             gpu[0] = 0
+            chocks[0] = 0
 
             door_cargo[0] = 0
             door_cargo[1] = 0
