@@ -1,5 +1,5 @@
 -- ToLiss A346 startup script by Skarafaz
--- version 1.0.1
+-- version 1.0.2
 
 if PLANE_ICAO ~= "A346" then
     return
@@ -7,6 +7,7 @@ end
 
 local gpu1 = dataref_table("AirbusFBW/EnableExternalPower")
 local gpu2 = dataref_table("AirbusFBW/EnableExternalPowerB")
+local chocks = dataref_table("AirbusFBW/Chocks")
 
 local door_cargo = dataref_table("AirbusFBW/CargoDoorModeArray")
 local door_pax = dataref_table("AirbusFBW/PaxDoorModeArray")
@@ -32,6 +33,7 @@ function init()
 
             gpu1[0] = 0
             gpu2[0] = 0
+            chocks[0] = 0
 
             door_cargo[0] = 0
             door_cargo[1] = 0
